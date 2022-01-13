@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D700E16B278D20D700884FD2 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D700E16A278D20D700884FD2 /* HealthStore.swift */; };
+		D700E170278D25CA00884FD2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D700E16F278D25CA00884FD2 /* HealthKit.framework */; };
+		D7E4DE6D278FCD4000560320 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4DE6C278FCD4000560320 /* Step.swift */; };
+		D7E4DE70278FCE7D00560320 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4DE6F278FCE7D00560320 /* GraphView.swift */; };
 		D7E8A059278B740200400483 /* monsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8A058278B740200400483 /* monsterApp.swift */; };
 		D7E8A05B278B740200400483 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8A05A278B740200400483 /* ContentView.swift */; };
 		D7E8A05D278B740400400483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E8A05C278B740400400483 /* Assets.xcassets */; };
@@ -34,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D700E16A278D20D700884FD2 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		D700E16C278D233800884FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D700E16D278D25CA00884FD2 /* monster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monster.entitlements; sourceTree = "<group>"; };
+		D700E16F278D25CA00884FD2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D7E4DE6C278FCD4000560320 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		D7E4DE6F278FCE7D00560320 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		D7E8A055278B740200400483 /* monster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = monster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8A058278B740200400483 /* monsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monsterApp.swift; sourceTree = "<group>"; };
 		D7E8A05A278B740200400483 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D700E170278D25CA00884FD2 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +82,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D700E16E278D25CA00884FD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D700E16F278D25CA00884FD2 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7E4DE6B278FCD2700560320 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7E4DE6C278FCD4000560320 /* Step.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7E4DE6E278FCE6600560320 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7E4DE6F278FCE7D00560320 /* GraphView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D7E8A04C278B740200400483 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +113,7 @@
 				D7E8A068278B740400400483 /* monsterTests */,
 				D7E8A072278B740400400483 /* monsterUITests */,
 				D7E8A056278B740200400483 /* Products */,
+				D700E16E278D25CA00884FD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +130,11 @@
 		D7E8A057278B740200400483 /* monster */ = {
 			isa = PBXGroup;
 			children = (
+				D7E4DE6E278FCE6600560320 /* Views */,
+				D7E4DE6B278FCD2700560320 /* Models */,
+				D700E16D278D25CA00884FD2 /* monster.entitlements */,
+				D700E16C278D233800884FD2 /* Info.plist */,
+				D700E16A278D20D700884FD2 /* HealthStore.swift */,
 				D7E8A058278B740200400483 /* monsterApp.swift */,
 				D7E8A05A278B740200400483 /* ContentView.swift */,
 				D7E8A05C278B740400400483 /* Assets.xcassets */,
@@ -257,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E4DE70278FCE7D00560320 /* GraphView.swift in Sources */,
 				D7E8A05B278B740200400483 /* ContentView.swift in Sources */,
+				D7E4DE6D278FCD4000560320 /* Step.swift in Sources */,
+				D700E16B278D20D700884FD2 /* HealthStore.swift in Sources */,
 				D7E8A059278B740200400483 /* monsterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,11 +460,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = monster/monster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"monster/Preview Content\"";
+				DEVELOPMENT_TEAM = P6CJ483K57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = monster/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,11 +493,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = monster/monster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"monster/Preview Content\"";
+				DEVELOPMENT_TEAM = P6CJ483K57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = monster/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
